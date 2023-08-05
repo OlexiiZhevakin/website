@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --bg: #EFEFEF;
+  --bg: #6118CC;
   --default: #222222;
   --green: #2AD200;
 }
@@ -68,7 +68,25 @@ body {
 }
 
 body {
-  background-color: var(--bg);
+  /* background-image: linear-gradient(to right, #6a11cb 0%, #4c41e3 25%, #3d6efc 50%, #2a9aff 75%, #2575fc 100%); */
+  background-image: linear-gradient(to right, #9400D3 0%, #4B0082 25%, #0000FF 50%, #FF7F00 100%);
+
+  background-size:400%;
+  animation:beginani 15s infinite;
+}
+
+@keyframes beginani {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 main {

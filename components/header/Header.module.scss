@@ -64,7 +64,7 @@
     height: 10%;
     width: 30px;
     transition: all 0.3s ease 0s;
-    background-color: var(--default);
+    background-color: var(--white);
   }
 
   &::before,
@@ -84,5 +84,21 @@
     width: 30px;
     top: 50%;
     transform: scale(1) translate(0, -50%);
+  }
+}
+
+.btnActive span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.btnActive {
+  &::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  &::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
   }
 }
