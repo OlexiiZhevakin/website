@@ -1,0 +1,88 @@
+.container{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 70px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav.active {
+  /* Отобразить меню, когда у элемента есть класс active */
+  transform: translateX(0);
+}
+
+.blur{
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  position: absolute;
+  // left: 40%;
+  display: none;
+}
+
+.blur.active{
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.list{
+  width: 40%;
+  height: 100%;
+  background-color: var(--default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.link{
+  color: var(--white);
+  font-size: 46px;
+}
+
+.burger {
+  z-index: 5;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  span,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    height: 10%;
+    width: 30px;
+    transition: all 0.3s ease 0s;
+    background-color: var(--default);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    width: 30px;
+    top: 50%;
+    transform: scale(1) translate(0, -50%);
+  }
+}

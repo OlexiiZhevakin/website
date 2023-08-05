@@ -1,0 +1,32 @@
+.container{
+  min-height: calc(100vh - 156px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper{
+  max-width: 700px;
+}
+
+.title{
+  max-width: 700px;
+  padding-bottom: 20px;
+  span{
+    color: var(--default);
+  }
+}
+
+.subtitle{
+  font-size: 34px;
+  padding-bottom: 40px;
+}
+
+.text{
+  font-size: 18px;
+  max-width: 330px;
+  padding-bottom: 100px;
+  span{
+    color: var(--green);
+  }
+}
