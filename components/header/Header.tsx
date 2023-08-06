@@ -63,6 +63,7 @@ const Header = () => {
         <div className={`${styles.blur} ${isMenuActive ? styles.active : ''}`} />
         <div className={`${styles.burger} ${isBtnActive ? styles.btnActive : ''}`} onClick={toggleMenu}>
           <span></span>
+          <div className={styles.menu}>Меню</div>
         </div>
         <nav className={`${styles.nav} ${isMenuActive ? styles.active : ''}`}>
           <ul className={styles.list}>

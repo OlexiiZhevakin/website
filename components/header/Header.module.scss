@@ -57,10 +57,12 @@
 }
 
 .burger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 5;
-  display: block;
   position: relative;
-  width: 30px;
+  width: 100px;
   height: 18px;
   cursor: pointer;
   span,
@@ -94,6 +96,7 @@
   }
 }
 
+
 .btnActive span {
   transform: scale(0) translate(0px, -50%);
 }
@@ -117,5 +120,8 @@
   .list{
     width: 100%;
     gap: 30px;
+  }
+  .menu{
+    display: none;
   }
 }
