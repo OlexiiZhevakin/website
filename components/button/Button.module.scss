@@ -8,3 +8,10 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 480px){
+  .button{
+    margin: auto;
+    display: block;
+  }
+}

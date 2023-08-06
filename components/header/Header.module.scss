@@ -24,17 +24,16 @@
   height: 100vh;
   backdrop-filter: blur(4px);
   position: absolute;
-  // left: 40%;
   display: none;
 }
 
 .blur.active{
   display: block;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .list{
-  width: 40%;
+  width: 46%;
   height: 100%;
   background-color: var(--default);
   display: flex;
@@ -42,6 +41,8 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
+  position: absolute;
+  top: -70px;
 }
 
 .link{
@@ -100,5 +101,15 @@
   &::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
+  }
+}
+
+@media (max-width: 480px){
+  .container{
+    flex-direction: row-reverse;
+  }
+  .list{
+    width: 100%;
+    gap: 30px;
   }
 }

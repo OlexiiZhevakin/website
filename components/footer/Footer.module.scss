@@ -11,3 +11,14 @@
   display: flex;
   gap: 30px;
 }
+
+@media (max-width: 480px){
+  .nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .list{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

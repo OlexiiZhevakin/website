@@ -1,8 +1,7 @@
 :root {
   --white: #ffffff;
-  --bg: #6118CC;
   --default: #222222;
-  --green: #2AD200;
+  --yellow: #FEE929;
 }
 
 html {
@@ -64,13 +63,11 @@ a {
 html,
 body {
   /* min-height: 100vh; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
-  /* background-image: linear-gradient(to right, #6a11cb 0%, #4c41e3 25%, #3d6efc 50%, #2a9aff 75%, #2575fc 100%); */
   background-image: linear-gradient(to right, #9400D3 0%, #4B0082 25%, #0000FF 50%, #FF7F00 100%);
-
   background-size:400%;
   animation:beginani 15s infinite;
 }
@@ -89,12 +86,16 @@ body {
   }
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 main {
   flex-grow: 1;
 }
 
 .container{
-  max-width: 1190px;
+  max-width: 1320px;
   width: 100%;
   min-height: 100vh;
   padding: 0 10px;
@@ -103,7 +104,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   line-height: 1.1;
-  color: var(--default);
+  color: var(--white);
   font-weight: 400;
 }
-

@@ -41,6 +41,22 @@ const Header = () => {
     setIsBtnActive(!isBtnActive);
   };
 
+  const closeMenu = () => {
+    setIsMenuActive(false);
+    setIsBtnActive(false);
+  };
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (body) {
+      if (isMenuActive) {
+        body.classList.add('lock');
+      } else {
+        body.classList.remove('lock');
+      }
+    }
+  }, [isMenuActive]);
+
   return (
     <header className={styles.container}>
       <div className={`${styles.blur} ${isMenuActive ? styles.active : ''}`}/>
@@ -51,7 +67,7 @@ const Header = () => {
         <ul className={styles.list}>
           {links.map((link) => (
             <li className={styles.item} key={link.id}>
-              <Link className={styles.link} href={link.url}>
+              <Link className={styles.link} href={link.url} onClick={closeMenu}>
                 {link.title}
               </Link>
             </li>
@@ -61,6 +77,7 @@ const Header = () => {
       <Link className={styles.logo} href="/">
         MyAPP
       </Link>
+      <a className={styles.tel} href="tel:+380000000000">+38(000)000-00-00</a>
     </header>
   );
 };export default Header
