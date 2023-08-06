@@ -61,49 +61,33 @@ a {
 }
 
 html,
-body {
-  /* min-height: 100vh; */
-  /* overflow-x: hidden; */
+body{
+  min-height: 100vh;
 }
 
 body {
-  background-image: linear-gradient(to right, #9400D3 0%, #4B0082 25%, #0000FF 50%, #FF7F00 100%);
-  background-size:400%;
-  animation:beginani 15s infinite;
-}
-
-@keyframes beginani {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: var(--default);
+  line-height: 1.1;
+  color: var(--white);
+  font-weight: 400;
 }
 
 body.lock {
   overflow: hidden;
+
 }
 
 main {
   flex-grow: 1;
+  
+
 }
 
 .container{
   max-width: 1320px;
-  width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 79px);
   padding: 0 10px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  line-height: 1.1;
-  color: var(--white);
-  font-weight: 400;
 }

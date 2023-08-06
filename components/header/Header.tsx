@@ -59,25 +59,29 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <div className={`${styles.blur} ${isMenuActive ? styles.active : ''}`}/>
-      <div className={`${styles.burger} ${isBtnActive ? styles.btnActive : ''}`} onClick={toggleMenu}>
-        <span></span>
+      <div className={styles.wrapper}>
+        <div className={`${styles.blur} ${isMenuActive ? styles.active : ''}`} />
+        <div className={`${styles.burger} ${isBtnActive ? styles.btnActive : ''}`} onClick={toggleMenu}>
+          <span></span>
+        </div>
+        <nav className={`${styles.nav} ${isMenuActive ? styles.active : ''}`}>
+          <ul className={styles.list}>
+            {links.map((link) => (
+              <li className={styles.item} key={link.id}>
+                <Link className={styles.link} href={link.url} onClick={closeMenu}>
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <Link className={styles.logo} href="/">
+          MyAPP
+        </Link>
+        <a className={styles.tel} href="tel:+380000000000">+38(000) 000 00 00</a>
       </div>
-      <nav className={`${styles.nav} ${isMenuActive ? styles.active : ''}`}>
-        <ul className={styles.list}>
-          {links.map((link) => (
-            <li className={styles.item} key={link.id}>
-              <Link className={styles.link} href={link.url} onClick={closeMenu}>
-                {link.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <Link className={styles.logo} href="/">
-        MyAPP
-      </Link>
-      <a className={styles.tel} href="tel:+380000000000">+38(000)000-00-00</a>
     </header>
   );
-};export default Header
+};
+
+export default Header

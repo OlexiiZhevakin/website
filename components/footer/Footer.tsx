@@ -5,9 +5,9 @@ import styles from './Footer.module.scss'
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <nav className={styles.nav}>
+
         <Link className={styles.logo} href='/'>MyAPP</Link>
-        <ul className={styles.list}>
+        {/* <ul className={styles.list}>
           <li className={styles.item}>
             <Link className={styles.link} href="#">
               Лендінг
@@ -23,11 +23,11 @@ const Footer = () => {
               Налаштування реклами
             </Link>
           </li>
-        </ul>
+        </ul> */}
         <span>
           2023
         </span>
-      </nav>
+
     </footer>
   )
 }

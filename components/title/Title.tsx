@@ -1,11 +1,11 @@
 import styles from './Title.module.scss'
 
+
 type Props = {
   children: React.ReactNode
   tag: 'h1' | 'h2' | 'h3'
   className?: string
 }
-
 
 const Title = ({ children, tag, className }: Props) => {
   switch (tag) {

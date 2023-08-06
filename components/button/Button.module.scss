@@ -1,17 +1,17 @@
 .button{
-  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  background-color: var(--yellow);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   padding: 19px 53px;
   border: none;
+  color: var(--default);
   cursor: pointer;
 }
 
 @media (max-width: 480px){
   .button{
-    margin: auto;
     display: block;
   }
 }
