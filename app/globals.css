@@ -66,10 +66,11 @@ body{
 }
 
 body {
-  background-color: var(--default);
+  /* background-color: var(--default); */
   line-height: 1.1;
   color: var(--white);
   font-weight: 400;
+  background: url('/img/bg.webp') center/cover no-repeat;
 }
 
 body.lock {
