@@ -20,7 +20,7 @@ const Posluhy = () => {
                 <p className={styles.descr}>
                   {card.descr}
                 </p>
-                <Link className={styles.btn} href='#'>Детальніше</Link>
+                <Link className={styles.btn} href={`/posluhy/${card.id}`}>Детальніше</Link>
               </div>
             </div>
           </li>
