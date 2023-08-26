@@ -1,0 +1,42 @@
+.container {
+  background-color: var(--white);
+  color: var(--default);
+  padding: 50px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  padding-top: 43px;
+}
+
+.item {
+  max-width: 326px;
+  border: 1px solid green;
+  display: flex;
+  /* Added */
+  flex-direction: column;
+  /* Added */
+}
+
+.inner {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  /* Changed from 'flex-start' to 'space-between' */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.description {
+  margin-top: auto;
+  /* Push description to the bottom */
+}

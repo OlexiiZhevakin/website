@@ -1,4 +1,4 @@
-import Title from '@/components/title/Title'
+import Title from '@/app/components/title/Title'
 import styles from './page.module.scss'
 import { posluhydata } from '../data'
 import { Metadata } from 'next'

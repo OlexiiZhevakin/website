@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import styles from './Header.module.scss'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const links = [
   {
@@ -60,7 +61,6 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={`${styles.blur} ${isMenuActive ? styles.active : ''}`} />
         <div className={`${styles.burger} ${isBtnActive ? styles.btnActive : ''}`} onClick={toggleMenu}>
           <span></span>
           <div className={styles.menu}>Меню</div>
@@ -77,7 +77,7 @@ const Header = () => {
           </ul>
         </nav>
         <Link className={styles.logo} href="/">
-          MyAPP
+          <Image src='/img/logo-black.svg' alt='Логотип сайту' width={60} height={60}/>
         </Link>
         <a className={styles.tel} href="tel:+380000000000">+38(000) 000 00 00</a>
       </div>

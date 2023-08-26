@@ -1,24 +1,16 @@
-.container{
-  min-height: calc(100vh - 156px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.title{
+.title {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.list{
+.list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 50px;
 }
 
-.card{
+.card {
   max-width: 400px;
   background-color: var(--white);
   color: var(--default);
@@ -27,14 +19,14 @@
   flex-direction: column;
 }
 
-.content{
+.content {
   padding: 50px 48px 64px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.subtitle{
+.subtitle {
   font-size: 36px;
   font-weight: 600;
   padding-bottom: 64px;
@@ -42,14 +34,14 @@
   text-align: center;
 }
 
-.descr{
+.descr {
   font-size: 16px;
   line-height: 1.9;
   color: #3A3A3A;
   padding-bottom: 46px;
 }
 
-.btn{
+.btn {
   max-width: 280px;
   width: 100%;
   display: block;
@@ -61,31 +53,36 @@
   margin-top: auto;
 }
 
-@media (max-width: 992px){
-  .card{
+@media (max-width: 992px) {
+  .card {
     max-width: 300px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 24px;
     padding-bottom: 40px;
   }
 }
 
-@media (max-width: 768px){
-  .container{
+@media (max-width: 768px) {
+  .container {
     padding: 30px 0;
   }
-  .list{
+
+  .list {
     flex-direction: column;
   }
-  .content{
+
+  .content {
     padding: 30px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 18px;
     padding-bottom: 20px;
   }
-  .descr{
+
+  .descr {
     line-height: 1.2;
     padding-bottom: 20px;
     text-align: center;

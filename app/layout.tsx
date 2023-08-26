@@ -1,12 +1,12 @@
-import Header from '@/components/header/Header'
+import Header from '@/app/components/header/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import Footer from '@/components/footer/Footer'
+import Footer from '@/app/components/footer/Footer'
 
 
 const roboto = Roboto({
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '700', '900'],
   style: ['normal'],
   subsets: ['latin'],
   display: 'swap',

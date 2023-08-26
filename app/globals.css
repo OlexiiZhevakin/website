@@ -80,6 +80,10 @@ main {
   flex-grow: 1;
 }
 
+section{
+  padding: 50px 0;
+}
+
 .container{
   max-width: 1320px;
   min-height: calc(100vh - 79px);

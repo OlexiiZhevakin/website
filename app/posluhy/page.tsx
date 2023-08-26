@@ -1,33 +1,18 @@
-import Title from '@/components/title/Title'
-import styles from './page.module.scss'
-import { posluhydata } from './data'
-import Link from 'next/link'
+import Form from "../components/form/Form"
+import Advantage from "./section/advantage/Advantage"
+import Guarantee from "./section/guarantee/Guarantee"
+import Posluhy from "./section/posluhy/Posluhy"
 
-const Posluhy = () => {
+
+const PosluhyPage = () => {
   return (
-    <section className={styles.container}>
-      <Title className={styles.title} tag={'h2'}>
-        Який тип сайту Вам потрібен?
-      </Title>
-      <ul className={styles.list}>
-        {posluhydata.map((card, id) => (
-          <li className={styles.item} key={id}>
-            <div className={styles.card}>
-              <div className={styles.content}>
-                <h3 className={styles.subtitle}>
-                  {card.title}
-                </h3>
-                <p className={styles.descr}>
-                  {card.descr}
-                </p>
-                <Link className={styles.btn} href={`/posluhy/${card.id}`}>Детальніше</Link>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <>
+      <Posluhy />
+      <Advantage />
+      <Guarantee/>
+      <Form/>
+    </>
   )
 }
 
-export default Posluhy
+export default PosluhyPage

@@ -1,6 +1,6 @@
-import Title from '@/components/title/Title'
+import Title from '@/app/components/title/Title'
 import styles from './page.module.scss'
-import Button from '@/components/button/Button'
+import Button from '@/app/components/button/Button'
 
 
 const HomePage = () => {
